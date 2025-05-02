@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Event - Royal Maple Garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Royal Maple Garden Logo">
+                <h1>Royal Maple Garden</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking page-section">
+        <div class="container">
+            <h2 class="section-title">Book Your Event</h2>
+            <p class="section-description">Fill out the form below to check availability and book your special occasion</p>
+            
+            <div class="booking-container">
+                <form id="booking-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event-type">Event Type</label>
+                        <select id="event-type" name="event-type" required>
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="ring-ceremony">Ring Ceremony</option>
+                            <option value="kitty-party">Kitty Party</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="event-date">Event Date</label>
+                            <input type="date" id="event-date" name="event-date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="10" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Requirements</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Submit Booking Request</button>
+                </form>
+                
+                <div class="booking-info">
+                    <h3>Booking Information</h3>
+                    <p>To ensure the best experience for your event, we recommend booking at least 2-3 months in advance, especially for weekend dates and peak season (October-February).</p>
+                    
+                    <div class="booking-features">
+                        <div class="booking-feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <p>Flexible scheduling options</p>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <p>Customizable packages to fit your budget</p>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-users"></i>
+                            <p>Capacity for up to 500 guests</p>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-headset"></i>
+                            <p>Dedicated event coordinator</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-direct">
+                        <h4>For immediate assistance:</h4>
+                        <p><i class="fas fa-phone"></i> +91 98179 48179 / +91 88007 20477</p>
+                        <p><i class="fas fa-envelope"></i> sales@royalmaplegarden.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.jpeg" alt="Royal Maple Garden Logo">
+                    <h3>Royal Maple Garden</h3>
+                    <p>A unit of Pandit Parasram Vatika and Shagun Vatika Group</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Party Lawn</li>
+                        <li>Marriage Arrangement</li>
+                        <li>Ring Ceremony</li>
+                        <li>Kitty Party</li>
+                        <li>Birthday Party</li>
+                        <li>Office Party</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Stay updated with our latest offers and events</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Royal Maple Garden. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Booking Request Received</h2>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for your booking request. Our team will review your details and get back to you within 24 hours to confirm availability and discuss further arrangements.</p>
+                <p>A confirmation email has been sent to your email address.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="modal-close-btn" class="btn-primary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
